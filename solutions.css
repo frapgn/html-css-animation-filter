@@ -68,3 +68,12 @@
     filter: blur(0px);
     border-radius: 10px;
 }
+
+.ex-9-img {
+    transition: 0.1s;
+}
+
+.ex-9-img:hover {
+    filter: drop-shadow(20px 20px 5px);
+    transform: scale(120%);
+}
