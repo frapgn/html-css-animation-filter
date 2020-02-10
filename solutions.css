@@ -55,12 +55,16 @@
 }
 
 .ex-7-img:hover {
-    filter: invert();
+    filter: invert() ;
     opacity: 0.5;
 }
 
 .ex-8-img {
     transition: 0.5s;
-    animation-name: boom;
-    animation-duration: infinite;
+    filter: blur(1px) grayscale();
+}
+
+.ex-8-img:hover {
+    filter: blur(0px);
+    border-radius: 10px;
 }
