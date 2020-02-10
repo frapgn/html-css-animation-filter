@@ -31,6 +31,17 @@
 }
 
 .ex-4-square:hover {
-    /* transition: 1s ease-out; */
     background-color: rgba(0, 0, 0, 0);
+}
+
+.ex-5-square {
+    transition: 0.2s linear;
+}
+
+.ex-5-square:hover {
+    transform: scale(150%);
+}
+
+.ex-5-square:active {
+    transform: scale(50%);
 }
