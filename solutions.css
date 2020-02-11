@@ -113,27 +113,61 @@
 
 /* Esercizio 12 */
 .ex-12-button:hover .ex-12-top-white {
-    animation-name: swingbordertop;
+    animation-name: swingBorderTop;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .ex-12-button:hover .ex-12-bottom-white {
-    animation-name: swingborderbottom;
+    animation-name: swingBorderBottom;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes swingbordertop {
+@keyframes swingBorderTop {
     0% {}
     50% {left: 60%;}
-    100% {left: 10%}
+    100% {left: 10%;}
 }
 
-@keyframes swingborderbottom {
+@keyframes swingBorderBottom {
+    0% {}
+    50% {right: 60%;}
+    100% {right: 20%;}
+}
+
+/* Esercizio 13 */
+.well {
+    overflow: hidden;
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: rotateBorderTop;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: rotateBorderBottom;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateBorderTop {
+    0% {left: 10%; top: -10px;}
+    20% {left: 100%; top: -3px;}
+    40% {left: 100%; top: 47px;}
+    60% {left: -30%; top: 47px;}
+    80% {left: -30%; top: -3px;}
+    100% {left: 10%; top: -10px;}
+}
+
+/* @keyframes rotateBorderBottom {
     0% {}
     50% {right: 60%;}
     100% {right: 20%}
-}
+} */
