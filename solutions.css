@@ -166,8 +166,11 @@
     100% {left: 10%; top: -10px;}
 }
 
-/* @keyframes rotateBorderBottom {
-    0% {}
-    50% {right: 60%;}
-    100% {right: 20%}
-} */
+@keyframes rotateBorderBottom {
+    0% {right: 20%; bottom: -10px;}
+    30% {right:calc(100% - 30px); bottom: -10px;}
+    43% {right:calc(100% - 30px); bottom: 100%;}
+    80% {right: 0; bottom: 100%;}
+    93% {right: -15px; bottom: -10px;}
+    100% {bottom: -10px; right: 20%;}
+}
